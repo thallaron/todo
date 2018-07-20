@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-       
+
+<script src="app.js"></script> 
+<script src="config.js"></script>   
+
         <div class="topnav">
             <a class="active" href="#home">List Maker</a>
             <a href="#calendar">Calendar</a>
@@ -16,7 +19,7 @@
             <a href="#item">Items</a>
             
         </div>
-                
+              
         <div class="boxOne">
             <h1>
                 Group Bravo
