@@ -1,0 +1,59 @@
+/* 
+@Ancar Willis
+*/
+
+h1 {
+color: black;
+text-align: left;
+font-family: Verdana, Geneva, sans-serif;
+}
+
+body{
+ 
+}
+
+.boxOne{
+    margin-top: 300px;
+    margin-left: 500px;
+    
+    /* border: 500px solid white;
+    padding: 0px;*/
+}
+
+.boxTwo{
+    margin-top: 300px;
+    margin-left: 0px;
+    background-color: darkred;
+   
+    padding: 100px;
+    
+}
+
+.topnav{
+    background-color: whitesmoke;
+    overflow: hidden;
+    color: black;
+}
+.topnav a {
+    float: left;
+    color: black ;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: darkred;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 22px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+}
