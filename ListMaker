@@ -11,7 +11,13 @@
 
 <script src="app.js"></script> 
 <script src="config.js"></script>   
+<!--
+<script type="text/javascript" src="package.json"></script>
+<script type="text/javascript" >
+<script type="text/javascript" src="package-lock.json"></script>
+             <script type="text/javascript" >
 
+-->
         <div class="topnav">
             <a class="active" href="#home">List Maker</a>
             <a href="#calendar">Calendar</a>
