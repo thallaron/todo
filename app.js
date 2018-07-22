@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var nunjucks = require('nunjucks');
+var favicon = require('serve-favicon');
 
 var app = express();
 app.io = require('socket.io')();
@@ -21,6 +22,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')))
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', todoRouter);
