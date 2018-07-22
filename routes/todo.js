@@ -6,14 +6,14 @@ module.exports = function (io) {
   var todo = io.of('/')
   /* GET home page. */
   router.get('/', function(req, res, next) {
-    res.render('layout', { 
+    res.render('todo', { 
   	  title: 'ToDo',
   	  year: cfg.year,
   	  version: cfg.version
     });
   });
 	todo.on('connection', function (socket) {
-        console.log('User has connected to Index')
+        console.log('User has connected to ToDo')
 	})
   return router
 }

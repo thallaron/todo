@@ -1,0 +1,52 @@
+{% extends "layout.njk" %}
+{% block body %}
+<h1>Hello World from ToDo App!</h1>
+<!-- Modal -->
+<div class="modal fade" id="addform" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add ToDo</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<div class="form-group">
+          <label>ToDo Name</label>
+          <input class="form-control" id="" placeholder="New Task">
+        </div>
+        <div class="form-group">
+		  <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="far fa-clock"></i></span>
+            </div>
+            <input id="startdatetime" class="form-control" placeholder="Start">
+            <input id="stopdatetime" class="form-control" placeholder=Stop>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="textarea1">Details</label>
+          <textarea class="form-control" id="" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+		<div class="custom-control custom-radio custom-control-inline pl-5">
+          <input type="radio" id="priority1" name="priority1" class="custom-control-input">
+          <label class="custom-control-label" for="priority1">Low</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="priority2" name="priority1" class="custom-control-input">
+          <label class="custom-control-label" for="priority2">Medium</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline pr-5">
+          <input type="radio" id="priority3" name="priority1" class="custom-control-input">
+          <label class="custom-control-label" for="priority3">High</label>
+        </div>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
