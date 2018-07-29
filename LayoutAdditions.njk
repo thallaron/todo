@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/stylesheets/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/fontawesome-free-5.1.1.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="#" id="additem">
+        <i class="fas fa-plus fa-lg"></i> {{ title }}
+      </a>
+    </nav>
+      <div id="myDIV" class="header">
+  <h2 style="margin:5px">ToDo List View</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Here</li>
+  <li class="checked">you go</li>
+  <li>These</li>
+  <li>are</li>
+  <li>your</li>
+  <li>lists</li>
+</ul>
+    
+        
+    <script src="listView.js"></script>
+    {% block body %}
+      <!-- Body Content here is added from other .njk files -->
+    {% endblock %}
+    <footer>
+      <hr>
+      <h5 class="text-center">{{ title }} | &copy; {{ year }} | CMSC 495 | v{{ version }}</h5>
+    </footer>
+    <script src="/javascripts/jquery-3.3.1.min.js"></script>
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
+    <script src="/javascripts/jquery.datetimepicker.full.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  	<script src="/javascripts/client-todo.js"></script>
+  </body>
+</html>
