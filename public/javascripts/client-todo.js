@@ -33,7 +33,6 @@ $(document).ready(function () {
 			priority = 'high'
 		}
 		var values = {Name: $('#name').val(), Start: $('#startdatetime').val(), Stop: $('#stopdatetime').val(), Details: $('#details').val(), Priority: priority}
-		console.log({Task: values})
-		//socket.emit('task', {Task: values})
+		socket.emit('task', {Task: values})
 	})
 })
